@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: brown; text-align: center; margin-top: 5%; font-style: italic;">
+        The Education Point
+    </h1>
+    <h4>Book your Appointment for test!</h4>
+
+    <form action="/addBook/" method="post">
+            {% csrf_token %}
+
+     <label>Student Id:</label>
+     <div>{{form.std_id}}</div>
+
+     <label>Student Name:</label>
+     <div>{{form.std_name}}</div>
+
+     <label>Student Gender:</label>
+     <div>{{form.std_gender}}</div>
+
+     <label>Student Module:</label>
+     <div>{{form.std_module}}</div>
+
+     <label>Subject Fees:</label>
+     <div>{{form.std_fees}}</div>
+
+  <div>
+     <button type="submit" >Submit</button>
+
+  </div>
+
+    </form>
+</body>
+</html>v
