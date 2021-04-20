@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+
+
+    <form action="/update/{{tests.std_id}}" method="POST">
+        {% csrf_token %}
+
+     <table>
+      <tr>  <td>Student ID<br><input name="std_id" required value="{{tests.std_id}}"></td></tr>
+
+      <tr>  <td>Student Name<br><input name="std_name" required value="{{tests.std_name}}"></td></tr>
+
+      <tr>  <td>Student Gender<br><input name="std_gender" required  value="{{tests.std_gender}}"></td></tr>
+
+      <tr>  <td>Student Module<br><input name="std_module" required value="{{tests.std_module}}"></td></tr>
+
+      <tr>  <td>Student Fees<br><input name="std_fees" required  value="{{tests.std_fees}}"></td></tr>
+
+      <tr>  <td><button type="submit">Update</button></td></tr>
+
+
+
+
+
+     </table>
+
+
+
+</form>
+    
+</body>
+</html>
